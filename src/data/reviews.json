@@ -1,0 +1,44 @@
+{
+    "result": {
+      "name": "Your Store Name",
+      "rating": 4.7,
+      "reviews": [
+        {
+          "author_name": "John Doe",
+          "rating": 5,
+          "text": "Great service!",
+          "time": 1672444800,
+          "thumb":"/src/assets/portrait-man.webp"
+        },
+        {
+            "author_name": "Mary Jane",
+            "rating": 4,
+            "text": "Great service!",
+            "time": 1672444801,
+            "thumb":"/src/assets/portrait-woman.webp"
+        },
+        {
+            "author_name": "Peter Parker",
+            "rating": 3,
+            "text": "No hay un mejor servicio!",
+            "time": 1672444801,
+            "thumb":"/src/assets/oldwoman-portrait.webp"
+        },
+        {
+            "author_name": "Peter Parker",
+            "rating": 3,
+            "text": "No hay un mejor servicio!",
+            "time": 1672444801,
+            "thumb":"/src/assets/oldwoman-portrait.webp"
+        },
+        {
+            "author_name": "Peter Parker",
+            "rating": 3,
+            "text": "No hay un mejor servicio!",
+            "time": 1672444801,
+            "thumb":"/src/assets/oldwoman-portrait.webp"
+        }
+      ]
+    }
+  }
+  

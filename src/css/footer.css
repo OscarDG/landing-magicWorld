@@ -73,7 +73,7 @@
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
-  width: 250px;
+  width: 260px;
   height: 100px;
 }
 
@@ -122,6 +122,6 @@
 
 .copy a {
   text-decoration: none;
-  color: #101820;
+  color: #FBFBFB;
   font-weight: bold;
 }/*# sourceMappingURL=footer.css.map */

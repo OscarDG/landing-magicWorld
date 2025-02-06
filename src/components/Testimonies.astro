@@ -1,48 +1,67 @@
 ---
 import '../css/testimonies.css'
 import Star from '../assets/star.svg'
+import reviewsData from "../data/reviews.json"
+import {Image} from "astro:assets"
+const {result} = reviewsData;
+const {reviews} = result;
+const maxReviews = 3;
+const limitedReviews = reviews.slice(0, maxReviews)
 ---
 
 <section class="testimonies_section">
-    <div class="testimonies_container">
-        <div class="testimonies">
-            <span class="thumb one"></span>
-            <h3>Mary Anne</h3>
-            <p class="subtitle">Madre de Familia</p>
-            <p class="pharagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis, mi cursus varius ultrices, odio neque finibus turpis, ut varius turpis lectus sed metus. Aliquam cursus risus eu ipsum ultricies, eu vestibulum velit laoreet.</p>
-            <div class="stars_container">
-                <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
+    <div class="testimonies_container" id="container">
+        {limitedReviews.length > 0 ? (
+            <>
+            {limitedReviews.map(review => (
+            <div class="testimonies">
+                <span class="thumb"><Image width={'150px'} height={'150px'} src={review.thumb} alt={review.author_name}/></span>
+                <h3>{review.author_name}</h3>
+                <p class="subtitle">Madre de Familia</p>
+                <p class="pharagraph">{review.text}</p>
+                <div class="stars_container">
+                    {review.rating == 5 ? (
+                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
+                    ): review.rating == 4 ?(
+                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>  
+                    ): review.rating == 3 ? (
+                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>      
+                    ) : review.rating == 2 ? (
+                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>  
+                    ) : review.rating == 1 ? (
+                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>
+                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>
+                    ) :
+                    null  
+                    }
+                </div>
             </div>
-        </div>
-        <div class="testimonies">
-            <span class="thumb two"></span>
-            <h3>Jon Doe</h3>
-            <p class="subtitle">Padre de familia</p>
-            <p class="pharagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis, mi cursus varius ultrices, odio neque finibus turpis, ut varius turpis lectus sed metus. Aliquam cursus risus eu ipsum ultricies, eu vestibulum velit laoreet.</p>
-            <div class="stars_container">
-                <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                <span><Star width={'30px'} height={'30px'} fill='#00000'/></span>
-            </div>
-        </div>
-        <div class="testimonies">
-            <span class="thumb three"></span>
-            <h3>Felicitty Angus</h3>
-            <p class="subtitle">Madre de Familia</p>
-            <p class="pharagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis, mi cursus varius ultrices, odio neque finibus turpis, ut varius turpis lectus sed metus. Aliquam cursus risus eu ipsum ultricies, eu vestibulum velit laoreet.</p>
-            <div class="stars_container">
-                <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                <span><Star width={'30px'} height={'30px'} fill='#00000'/></span>
-            </div>
-        </div>
+            ))}
+            </>
+            ) : (
+                <p> No hay testimonios</p>
+        )}
     </div>
 </section>
+<script>
+
+</script>

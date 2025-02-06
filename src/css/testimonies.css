@@ -26,35 +26,24 @@
   flex-flow: column nowrap;
   align-items: center;
   width: 320px;
-  height: 400px;
+  height: 350px;
   background: #27445D;
   border: 0;
 }
 
-.testimonies .thumb {
+.thumb {
   position: absolute;
   top: -80px;
   width: 150px;
   height: 150px;
   border-radius: 300px;
+  overflow: hidden;
 }
 
-.thumb.one {
-  background-image: url("/src/assets/portrait-woman.webp");
-  background-size: cover;
-  background-position: 20% 30%;
-}
-
-.thumb.two {
-  background-image: url("/src/assets/portrait-man.webp");
-  background-size: cover;
-  background-position: 20% 50%;
-}
-
-.thumb.three {
-  background-image: url("/src/assets/oldwoman-portrait.webp");
-  background-size: cover;
-  background-position: 20% 50%;
+.thumb img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .testimonies h3 {
@@ -85,7 +74,7 @@
 
 .stars_container {
   position: absolute;
-  bottom: 15px;
+  bottom: 30px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;

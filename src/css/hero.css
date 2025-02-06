@@ -90,7 +90,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 30%;
+  width: 33%;
   height: 300px;
   color: #27445D;
   font-family: "Rubik Moonrocks", serif;
@@ -107,7 +107,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 240px;
+  bottom: 200px;
   left: 200px;
   width: 200px;
   height: 50px;
