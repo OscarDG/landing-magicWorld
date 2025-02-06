@@ -1,0 +1,21 @@
+---
+import '../src/css/index.css'
+import {Image} from 'astro:assets'
+import Logo from '../assets/logo.webp'
+
+---
+<header class="main_header">
+    <div class="header_logo">
+        <a href="/">
+            <Image src={Logo} alt="Header Logo" loading={'eager'}/>
+        </a>
+    </div>
+    <nav class="header_nav">
+        <ul class="nav_list">
+            <a href="#main_section"><li>Sobre nosotros</li></a>
+            <a href="#services"><li>Nuestros servicios</li></a>
+            <a href="#team"><li>Nuestro equipo</li></a>
+        </ul>
+        <a class="header_btn--contact" href="http://wa.me/573103468979" target="_blank">Contacto</a>
+    </nav>
+</header>

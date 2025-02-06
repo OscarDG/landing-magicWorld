@@ -1,0 +1,46 @@
+---
+import '../css/services.css'
+import Planet1 from '../assets/planet1.svg'
+import Planet2 from '../assets/planet2.svg'
+import Planet3 from '../assets/planet3.svg'
+---
+<section class="services_section" id="services">
+    <div class="services_container">
+        <Planet1  class= 'planet1' width={'50px'} height={'50px'}/>
+        <Planet2 class='planet2' width={'75px'} height={'75px'} />
+        <Planet3 class='planet3' width={'50px'} height={'50px'} />
+        <div class="services_title">
+            <h1>Nuestros Servicios</h1>
+        </div>
+        <div class="services_description--container">
+            <div class="description1">
+                <span></span>
+                <h4>Actividades<br>deportivas</h4>
+            </div>
+            <div class="description2">
+                <span></span>
+                <h4>Actividades<br>artisticas</h4>
+            </div>
+            <div class="description3">
+                <span></span>
+                <h4>Clases de<br>idiomas</h4>
+            </div>
+            <div class="description4">
+                <span></span>
+                <h4>Asesoría psicológica<br>y Ocupacional</h4>
+            </div>
+        </div>
+    </div>
+    <div class="services_cta">
+        <a href="http://wa.me/573103468979" target="_blank">Más información</a>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    import("motion").then(({ scroll, animate }) => {
+      scroll(animate(".planet1", { y: [-400, 0], x: [-400, 0] }, { duration: .5 }));
+      scroll(animate(".planet2", { y: [200, 0], x: [-300, 0] }, { duration: .5 }));
+      scroll(animate(".planet3", { y: [-300, 0], x: [300, 0] }, { duration: .5 }));
+    });
+  });
+</script>

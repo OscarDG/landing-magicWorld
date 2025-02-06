@@ -1,0 +1,15 @@
+---
+import '../css/section.css'
+import Icon from '../assets/stars.svg'
+---
+
+<Icon id='starTwo' width={"90px"} height={"90px"}/>
+
+<script>
+    //Activate the animation with scroll
+    document.addEventListener("DOMContentLoaded", () => {
+      import("motion").then(({ animate, scroll }) => {
+        scroll(animate("#starTwo", { x: -320, y: -400, rotate: 360 }, { duration: .2 }));
+      });
+    });
+</script>

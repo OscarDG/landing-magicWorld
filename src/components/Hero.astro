@@ -1,0 +1,46 @@
+---
+import '../src/css/hero.css'
+import Rocket from '../assets/rocket.svg'
+import { Image } from 'astro:assets';
+import HeroImage from '../assets/happy-family.png'
+---
+
+<section  id= "hero" class="hero_section">
+    <button class="up_btn">
+        <Rocket width={'70px'} height={'70px'}/>
+        <span>Subir</span>
+    </button>
+    <div class="hero_content">
+        <div class="hero_text">
+            <h1>EL mejor lugar para tus hijos</h1>
+            <p>
+                Un lugar en el que tus hijos podrán desarrollar todo su potencial, a traves del juego y el aprendizaje significativo.
+            </p>
+        </div>
+        <div class="hero_image">
+            <Image src={HeroImage} alt='Familia feliz' loading={'eager'}/>
+        </div>
+        <a class="hero-cta" href="https://forms.office.com/Pages/ResponsePage.aspx?id=2bBm42XULkqVWzgjUMAzgDX3ViaBFDtPq2Qf1INGG2BUME83RTlUTlpOQTg2RTMyOUNISVRETVVQMC4u" target="_blank">Haz parte</a>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const scrollUpBtn = document.getElementsByClassName("up_btn")[0];
+
+    //Show scroll-up btn when scroll is over 500px
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 500) {
+        scrollUpBtn.classList.add("active");
+      } else {
+        scrollUpBtn.classList.remove("active");
+      }
+    });
+    
+    // Scroll to top smoothly when button is clicked
+    if(scrollUpBtn){
+        scrollUpBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    }
+  });
+</script>

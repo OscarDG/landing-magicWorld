@@ -1,0 +1,69 @@
+.team-section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.team-container {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px 120px;
+  width: 70%;
+  height: 95%;
+  margin-top: 80px;
+}
+
+.proffesional {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 280px;
+  height: 330px;
+}
+
+.prof-image--container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border: 0;
+  border-radius: 320px;
+  overflow: hidden;
+}
+
+.prof-image--container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.prof-desc--container {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+}
+
+.prof-desc--container h4 {
+  position: absolute;
+  top: -15px;
+  color: #E574BC;
+}
+
+.prof-desc--container p {
+  position: absolute;
+  top: 25px;
+  text-align: center;
+  font-size: 0.8em;
+}/*# sourceMappingURL=team.css.map */

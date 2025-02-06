@@ -1,0 +1,89 @@
+@import '_variables.sass'
+
+.testimonies_section
+    position: relative
+    display: flex
+    flex-flow: column nowrap
+    justify-content: flex-start
+    align-items: center
+    width: 100%
+    height: 100vh
+    background: $main_blue
+
+.testimonies_container
+    position: relative
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-evenly
+    align-items: center
+    width: 95%
+    height: 95%
+
+.testimonies
+    position: relative
+    top: 10%
+    display: flex
+    flex-flow: column nowrap
+    align-items: center
+    width: 320px
+    height: 400px
+    background: $dark_blue
+    border: 0
+
+.testimonies
+    .thumb
+        position: absolute
+        top: -80px
+        width: 150px
+        height: 150px
+        border-radius: 300px
+
+.thumb.one
+    background-image: url('/src/assets/portrait-woman.webp')
+    background-size: cover
+    background-position: 20% 30%
+
+.thumb.two
+    background-image: url('/src/assets/portrait-man.webp')
+    background-size: cover
+    background-position: 20% 50%
+
+.thumb.three
+    background-image: url('/src/assets/oldwoman-portrait.webp')
+    background-size: cover
+    background-position: 20% 50%
+
+.testimonies
+    h3
+        position: absolute
+        top: 80px
+        width: 150px
+        height: auto
+        color: $white
+        text-align: center
+
+.testimonies
+    .subtitle
+        position: absolute
+        top: 115px
+        text-align: center
+        color: $white
+        font-size: 0.8em
+
+.testimonies
+    .pharagraph
+        position: absolute
+        top: 170px
+        width: 260px
+        text-align: center
+        color: $white
+        font-size: 0.9em
+
+.stars_container
+    position: absolute
+    bottom: 15px
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-evenly
+    width: 200px
+

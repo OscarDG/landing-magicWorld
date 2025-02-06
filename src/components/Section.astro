@@ -1,0 +1,37 @@
+---
+import '../css/section.css'
+import Star from '../components/Star.astro'
+import StarTwo from './StarTwo.astro'
+---
+
+<section class="main_section" id="main_section">
+    <div class="section_clouds">
+        <div class="cloud_1"></div>
+        <div class="cloud_2"></div>
+        <div class="cloud_3"></div>
+        <div class="cloud_4"></div>
+    </div>
+    <div class="section_content">
+        <div class="section_content_image">
+            <div  class="section_content_stars--up">
+                <Star />
+            </div>
+            <div class="section_content_stars--down">
+                <StarTwo />
+            </div>
+        </div>
+        <div class="section_content_text">
+            <h2>Nuestra promesa</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In diam nibh, suscipit in orci et, varius gravida nisl. Quisque tincidunt tortor egestas molestie fermentum. Mauris tincidunt semper ultrices. Sed non vestibulum felis, congue ornare neque. Mauris nec tempus velit. Nullam ullamcorper sapien libero, non placerat enim egestas ut. Etiam interdum viverra turpis. Donec eget nisi tristique, mattis enim id, hendrerit erat.
+            </p>
+        </div>
+    </div>
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    import("motion").then(({ scroll, animate }) => {
+      scroll(animate(".section_content_text", { x: [0.5, -100]}, { duration: .1 }));
+    });
+  });
+</script>

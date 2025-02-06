@@ -1,0 +1,70 @@
+---
+import '../css/footer.css'
+import Phone from '../assets/phone.svg'
+import Email from '../assets/email.svg'
+import Location from '../assets/location.svg'
+import Facebook from '../assets/facebook.svg'
+import Instagram from '../assets/instagram.svg'
+---
+
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-contact">
+            <h2>Ponte en contacto</h2>
+            <div class="contact-phone">
+                <span><Phone width={'25px'} height={'25px'}/></span>
+                <p>3103468979</p>
+            </div>
+            <div class="contact-email">
+                <span><Email width={'25px'} height={'25px'}/></span>
+                <p>magicworld@correo.com</p>
+            </div>
+            <div class="contact-address">
+                <span><Location width={'25px'} height={'25px'}/></span>
+                <p>Calle 170 # 11 - 55 (Bogotá)</p>
+            </div>
+        </div>
+        <div class="footer-social">
+            <h2>Redes sociales</h2>
+            <div class="social-container">
+                <div class="social-instagram">
+                    <a href="http://instagram.com" target="_blank" aria-label="instagram"><Instagram id='instagram' width={'50px'} height={'50px'}/></a>
+                </div>
+                <div class="social-facebook">
+                    <a href="http://facebook.com" target="_blank" aria-label="facebook"><Facebook id="facebook" width={'55px'} height={'55px'}/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-section">
+        <div class="copy">
+            <p><a href="/" target="_blank" aria-label="CreativeStudio">CreativeDesign</a>. Todos los derechos reservados - 2025</p>
+        </div>
+    </div>
+</footer>
+<script>
+//add and remove class to social icons
+document.addEventListener("DOMContentLoaded", () => {
+    const facebook = document.getElementById("facebook");
+    const instagram = document.getElementById("instagram");
+
+    if(facebook){
+        facebook.addEventListener('mouseover', () => {
+            facebook.classList.add('hover')
+        });
+        facebook.addEventListener('mouseout', () => {
+            facebook.classList.remove('hover')
+        });
+    }
+
+    if(instagram){
+        instagram.addEventListener('mouseover', () => {
+            instagram.classList.add('hover')
+        })
+        instagram.addEventListener('mouseout', () => {
+            instagram.classList.remove('hover')
+        })
+    }
+
+  });
+</script>

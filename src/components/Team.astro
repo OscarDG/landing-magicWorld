@@ -1,0 +1,50 @@
+---
+import '../css/team.css'
+import { Image } from 'astro:assets';
+import Teacher1 from '../assets/teacher1.webp'
+import Teacher2 from '../assets/teacher2.webp'
+import Teacher3 from '../assets/teacher3.webp'
+import Teacher4 from '../assets/teacher4.webp'
+---
+
+<section class="team-section" id="team">
+    <h1>Nuestro equipo</h1>
+    <div class="team-container">
+        <div class="proffesional">
+            <div class="prof-image--container">
+                <Image src={Teacher1} alt="Teacher 1" />
+            </div>
+            <div class="prof-desc--container">
+                <h4>Mary Jane</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor eros vitae efficitur volutpat. Aenean justo odio, condimentum nec cursus id, egestas at lacus.</p>
+            </div>
+        </div>
+        <div class="proffesional">
+            <div class="prof-image--container">
+                <Image src={Teacher2} alt="Teacher 2" />
+            </div>
+            <div class="prof-desc--container">
+                <h4>Peter Parker</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor eros vitae efficitur volutpat. Aenean justo odio, condimentum nec cursus id, egestas at lacus.</p>
+            </div>
+        </div>
+        <div class="proffesional">
+            <div class="prof-image--container">
+                <Image src={Teacher3} alt="Teacher 3" />
+            </div>
+            <div class="prof-desc--container">
+                <h4>Clark Kent</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor eros vitae efficitur volutpat. Aenean justo odio, condimentum nec cursus id, egestas at lacus.</p>
+            </div>
+        </div>
+        <div class="proffesional">
+            <div class="prof-image--container">
+                <Image src={Teacher4} alt="Teacher 4" />
+            </div>
+            <div class="prof-desc--container">
+                <h4>Louis Lane</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor eros vitae efficitur volutpat. Aenean justo odio, condimentum nec cursus id, egestas at lacus.</p>
+            </div>
+        </div>
+    </div>
+</section>

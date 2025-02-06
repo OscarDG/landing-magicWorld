@@ -1,0 +1,51 @@
+---
+import '../css/features.css'
+import {Image} from 'astro:assets'
+import CardOne from '../assets/kids-playing.webp'
+import CardTwo from '../assets/happy-kids.webp'
+import CardThree from '../assets/kids-with-paper.webp'
+---
+
+<section class="features" id="features">
+    <div class="features_content">
+        <div class="features-card">
+            <div class="features-card--image">
+                <Image src={CardOne} alt="Kids playing" />
+            </div>
+            <div class="features-card--tittle">
+                <h3>Aprendizaje Significativo</h3>
+            </div>
+            <div class="features-card--text">
+                <p>
+                    Nuestro enfoque en el aprendizaje significativo garantiza que los niños adquieran...
+                </p>
+            </div>
+        </div>
+        <div class="features-card">
+            <div class="features-card--image">
+                <Image src={CardTwo} alt={"Kids learning"} />
+            </div>
+            <div class="features-card--tittle">
+                <h3>Fortalecimiento Motriz</h3>
+            </div>
+            <div class="features-card--text">
+                <p>
+                    Nuestro enfoque en el fortalecimiento motriz garantiza que los niños desarrollen...
+                </p>
+            </div>
+        </div>
+        <div class="features-card">
+            <div class="features-card--image">
+                <Image src={CardThree} alt={"Kids enjoy"} />
+            </div>
+            <div class="features-card--tittle">
+                <h3>Idiomas</h3>
+            </div>
+            <div class="features-card--text">
+                <p>
+                    Nuestro enfoque en el aprendizaje de idiomas garantiza que los niños...
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

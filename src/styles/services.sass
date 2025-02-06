@@ -1,0 +1,212 @@
+@import '_variables.sass'
+
+.services_section
+    position: relative
+    display: flex
+    flex-flow: column nowrap
+    justify-content: flex-start
+    align-items: center
+    width: 100%
+    height: 100vh
+
+.services_container
+    position: absolute
+    top: -20px
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    align-items: flex-start
+    width: 95%
+    height: 95%
+
+.planet1
+    position: absolute
+    top: 300px
+    left: 42%
+
+.planet2
+    position: absolute
+    bottom: 150px
+    left: 65%
+
+.planet3
+    position: absolute
+    top: 250px
+    right: 25%
+
+.services_title
+    position: absolute
+    top: 40px
+    width: 300px
+    height: auto
+    color: $dark_blue
+    text-align: center
+
+.services_description--container
+    position: absolute
+    bottom: 50px
+    display: flex
+    flex-flow: row nowrap
+    width: 100%
+    height: 80%
+
+.description1
+    position: absolute
+    display: flex
+    flex-flow: column nowrap
+    justify-content: space-around
+    align-items: center
+    top: 100px
+    left: 9%
+    width: 170px
+    height: 250px
+
+.description1
+    span
+        position: absolute
+        top: 0
+        display: block
+        width: 170px
+        height: 170px
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% 
+        background-image: url('/src/assets/sports.webp')
+        background-size: cover
+        background-position: 20%
+        filter: drop-shadow(0 0 3px rgb(166, 241, 224))
+
+.description1
+    h4
+        position: absolute
+        bottom: 10px
+        display: block
+        width: 100px
+        color: $main_pink
+        text-align: center
+
+.description2
+    position: absolute
+    display: flex
+    flex-flow: column nowrap
+    justify-content: space-around
+    align-items: center
+    top: 200px
+    left: 31%
+    width: 170px
+    height: 250px
+
+.description2
+    span
+        position: absolute
+        top: 0
+        display: block
+        width: 170px
+        height: 170px
+        border-radius: 67% 33% 70% 30% / 30% 54% 46% 70%  
+        background-image: url('/src/assets/arts.webp')
+        background-size: cover
+        background-position: 20%
+        filter: drop-shadow(0 0 3px rgb(166, 241, 224))
+
+.description2
+    h4
+        position: absolute
+        bottom: 10px
+        display: block
+        width: 100px
+        color: $main_pink
+        text-align: center
+
+.description3
+    position: absolute
+    display: flex
+    flex-flow: column nowrap
+    justify-content: space-around
+    align-items: center
+    top: 100px
+    right: 32%
+    width: 170px
+    height: 250px
+
+.description3 
+    span
+        position: absolute
+        top: 0
+        display: block
+        width: 170px
+        height: 170px
+        border-radius: 32% 68% 49% 51% / 35% 45% 55% 65%   
+        background-image: url('/src/assets/languages.webp')
+        background-size: cover
+        background-position: 20%
+        filter: drop-shadow(0 0 3px rgb(166, 241, 224))
+
+.description3
+    h4
+        position: absolute
+        bottom: 10px
+        display: block
+        width: 100px
+        color: $main_pink
+        text-align: center
+
+.description4
+    position: absolute
+    display: flex
+    flex-flow: column nowrap
+    justify-content: space-around
+    align-items: center
+    top: 200px
+    right: 9%
+    width: 170px
+    height: 250px
+
+.description4
+    span
+        position: absolute
+        top: 0
+        display: block
+        width: 170px
+        height: 170px
+        border-radius: 68% 32% 62% 38% / 50% 61% 39% 50%   
+        background-image: url('/src/assets/counseling.webp')
+        background-size: cover
+        background-position: 20%
+        filter: drop-shadow(0 0 3px rgb(166, 241, 224))
+
+.description4
+    h4
+        position: absolute
+        bottom: 10px
+        display: block
+        width: 150px
+        color: $main_pink
+        text-align: center
+
+.services_cta
+    position: absolute
+    bottom: 40px
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: center
+    width: 500px
+
+.services_cta
+    a
+        display: flex
+        flex-flow: column nowrap
+        justify-content: center
+        align-items: center
+        width: 200px
+        height: 50px
+        border: 0
+        border-radius: 100px
+        color: $white
+        text-decoration: none
+        background: $main_green
+        transform: scale(1)
+        transition: transform 0.2s ease-in
+
+.services_cta
+    a:hover
+        transform: scale(1.1)
