@@ -2,6 +2,8 @@
 import '../css/section.css'
 import Star from '../components/Star.astro'
 import StarTwo from './StarTwo.astro'
+import { Image } from 'astro:assets';
+import HeroImage from '/src/assets/kids-playing.webp'
 ---
 
 <section class="main_section" id="main_section">
@@ -13,12 +15,13 @@ import StarTwo from './StarTwo.astro'
     </div>
     <div class="section_content">
         <div class="section_content_image">
-            <div  class="section_content_stars--up">
-                <Star />
-            </div>
-            <div class="section_content_stars--down">
-                <StarTwo />
-            </div>
+            <Image src={HeroImage} width={600} height={550} alt="Image"/>
+        </div>
+        <div  class="section_content_stars--up">
+            <Star />
+        </div>
+        <div class="section_content_stars--down">
+            <StarTwo />
         </div>
         <div class="section_content_text">
             <h2>Nuestra promesa </h2>

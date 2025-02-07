@@ -63,11 +63,12 @@
   align-items: flex-start;
   width: 100%;
   height: 100vh;
+  z-index: 2;
 }
 
 .hero_image {
   position: absolute;
-  top: 0px;
+  top: 50px;
   right: 30px;
   display: flex;
   justify-content: center;
@@ -78,7 +79,7 @@
 }
 
 .hero_image img {
-  width: 680px;
+  width: 650px;
   height: 500px;
   object-fit: cover;
 }
@@ -86,7 +87,7 @@
 .hero_text {
   position: absolute;
   left: 200px;
-  top: 90px;
+  top: 180px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -107,7 +108,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 200px;
+  bottom: 100px;
   left: 200px;
   width: 200px;
   height: 50px;
