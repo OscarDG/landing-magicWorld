@@ -16,7 +16,7 @@ const limitedReviews = reviews.slice(0, maxReviews)
             <>
             {limitedReviews.map(review => (
             <div class="testimonies">
-                <span class="thumb"><Image width= {150} height= {150} src={review.thumb} alt={review.author_name}/></span>
+                <span class="thumb"><Image src={review.thumb} width= {150} height= {150} alt={review.author_name}/></span>
                 <h3>{review.author_name}</h3>
                 <p class="subtitle">Madre de Familia</p>
                 <p class="pharagraph">{review.text}</p>
