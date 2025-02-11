@@ -1,6 +1,7 @@
 ---
 import '../css/activities.css'
 import Arrow from '../assets/rigthArrow.svg'
+import { Image } from 'astro:assets'
 
 interface Props {
     title: string,
@@ -12,10 +13,11 @@ interface Props {
 }
 
 const {title, excerpt, date, slug, featuredImage, link} = Astro.props
+
 ---
 <div class="activities-card">
     <div class="activities-card--image">
-        <img src={featuredImage} alt="Kids playing" width={0} height={0}/>
+        <Image src={featuredImage} alt="Kids playing" width={100} height={100}/>
     </div>
     <div class="activities-card--tittle">
         <h3 set:html={title}></h3>

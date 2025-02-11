@@ -47,149 +47,49 @@
     top: 5%
     width: 30%
     height: auto
-    color: $dark_blue
-    font-size: 1.3vw
-    text-align: center
+
+.services_title
+    h1
+        color: $dark_blue
+        font-size: 1.5vw
+        text-align: center
 
 .services_description--container
     position: absolute
     top: 15%
     display: flex
     flex-direction: row
-    justify-content: space-between
+    justify-content: space-evenly
     align-items: center
     width: 100%
     height: 75%
 
-.description1
-    position: relative
-    top: -10%
+.service_card
     display: flex
     flex-flow: column nowrap
-    justify-content: space-around
+    justify-content: space-evenly
     align-items: center
-    width: 23%
-    height: 55%
+    width: 200px
+    height: 250px
 
-.description1
+.service_card
     span
-        position: absolute
-        top: 0
         display: block
-        width: 80%
-        height: 80%
-        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% 
-        background-image: url('/src/assets/sports.webp')
-        background-size: cover
-        background-position: 20%
+        width: 180px
+        height: 180px
+        border-radius: 100%
         filter: drop-shadow(0 0 3px rgb(166, 241, 224))
+        overflow: hidden
 
-.description1
-    h4
-        position: absolute
-        bottom: -10%
-        display: block
-        width: 80%
-        height: 13%
-        color: $main_pink
-        font-size: 1.3vw
-        text-align: center
-
-.description2
-    position: relative
-    top: 10%
-    display: flex
-    flex-flow: column nowrap
-    justify-content: space-around
-    align-items: center
-    width: 23%
-    height: 55%
-
-.description2
+.service_card
     span
-        position: absolute
-        top: 0
-        display: block
-        width: 80%
-        height: 80%
-        border-radius: 67% 33% 70% 30% / 30% 54% 46% 70%  
-        background-image: url('/src/assets/arts.webp')
-        background-size: cover
-        background-position: 20%
-        filter: drop-shadow(0 0 3px rgb(166, 241, 224))
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
 
-.description2
+.service_card
     h4
-        position: absolute
-        bottom: -10%
-        display: block
-        width: 80%
-        height: 15%
-        color: $main_pink
-        font-size: 1.3vw
-        text-align: center
-
-.description3
-    position: relative
-    top: -10%
-    display: flex
-    flex-flow: column nowrap
-    justify-content: space-around
-    align-items: center
-    width: 23%
-    height: 55%
-
-.description3 
-    span
-        position: absolute
-        top: 0
-        display: block
-        width: 82%
-        height: 80%
-        border-radius: 32% 68% 49% 51% / 35% 45% 55% 65%   
-        background-image: url('/src/assets/languages.webp')
-        background-size: cover
-        background-position: 20%
-        filter: drop-shadow(0 0 3px rgb(166, 241, 224))
-
-.description3
-    h4
-        position: absolute
-        bottom: -10%
-        display: block
-        width: 80%
-        height: 13%
-        color: $main_pink
-        font-size: 1.3vw
-        text-align: center
-
-.description4
-    position: relative
-    top: 10%
-    display: flex
-    flex-flow: column nowrap
-    justify-content: space-around
-    align-items: center
-    width: 23%
-    height: 55%
-
-.description4
-    span
-        position: absolute
-        top: 0
-        display: block
-        width: 80%
-        height: 80%
-        border-radius: 68% 32% 62% 38% / 50% 61% 39% 50%   
-        background-image: url('/src/assets/counseling.webp')
-        background-size: cover
-        background-position: 20%
-        filter: drop-shadow(0 0 3px rgb(166, 241, 224))
-
-.description4
-    h4
-        position: absolute
-        bottom: -10%
         display: block
         width: 80%
         height: 13%
@@ -217,8 +117,8 @@
         height: 80%
         border: 0
         border-radius: 100px
-        color: $white
-        font-size: 1.4vw
+        color: $dark_blue
+        font-size: 1.5vw
         text-decoration: none
         background: $main_green
         transform: scale(1)

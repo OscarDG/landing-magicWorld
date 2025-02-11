@@ -1,0 +1,22 @@
+---
+import '../css/services.css'
+import { Image } from 'astro:assets'
+
+interface Props {
+    title: string,
+    excerpt: string,
+    featuredImage: string,
+    date: string,
+    slug: string,
+    link: string
+}
+
+const {title, excerpt, date, slug, featuredImage, link} = Astro.props
+
+---
+<div class="service_card" id={slug}>
+    <span>
+        <Image src={featuredImage} alt={slug} width={100} height={100}/>
+    </span>
+    <h4 set:html={excerpt}></h4>
+</div>

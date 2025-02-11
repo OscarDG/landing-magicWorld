@@ -4,16 +4,34 @@ import ActivitiesCard from '../components/Activities_card.astro'
 
 import {getPageInfo} from '../lib/wp.ts'
 import {getPostsInfo} from '../lib/wp_posts.ts'
+import {getAllCategories} from '../lib/wp_categories.ts'
 
 const {title, content} = await getPageInfo('activities')
-const posts = await getPostsInfo({ perPage: 3 })
+const posts = await getPostsInfo({ perPage: 10 })
+const categories = await getAllCategories()
+
+const getCategoryName = (postCategories) => {
+    return postCategories.map(catID => {
+        const category = categories.find(cat => cat.id === catID);
+        return category? category.name : "unknown";
+    })
+}
+
 ---
 
-<section class="features" id="features">
-    <h1 set:html={title}></h1>
-    <div class="features_content">
+<section class="activities" id="features">
+    <h1>{title}</h1>
+    <div class="activities_content">
         {
-        posts.map((post) => <ActivitiesCard {...post}/>)
+            posts.map(post => {
+                const categoryName = getCategoryName(post.categories)
+                console.log(categoryName)
+                const isActivities = categoryName.includes('Activities');
+                return (
+                 isActivities ? <ActivitiesCard {...post}/>
+                : null
+                )
+            })
         }
     </div>
 </section>

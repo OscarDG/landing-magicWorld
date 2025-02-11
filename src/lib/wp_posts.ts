@@ -16,12 +16,13 @@ export const getPostsInfo = async ({perPage= 10}: {perPage?: number} = {}) => {
         content: {rendered: content},
         date,
         slug,
+        categories,
         link
     } = post
 
     const featuredImage = post._embedded['wp:featuredmedia'][0].source_url
 
-    return {title, excerpt, content, date, slug, link, featuredImage}
+    return {title, excerpt, content, date, slug, link, categories, featuredImage}
 
     })
 

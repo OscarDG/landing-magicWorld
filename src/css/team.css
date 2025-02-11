@@ -9,6 +9,12 @@
   padding-bottom: 40px;
 }
 
+.team-section h1 {
+  color: #27445D;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
 .team-container {
   position: relative;
   display: flex;

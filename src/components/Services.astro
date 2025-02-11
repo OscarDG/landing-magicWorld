@@ -1,8 +1,24 @@
 ---
 import '../css/services.css'
+
+import ServicesCard from './Services_card.astro'
+
 import Planet1 from '../assets/planet1.svg'
 import Planet2 from '../assets/planet2.svg'
 import Planet3 from '../assets/planet3.svg'
+
+import {getPostsInfo} from '../lib/wp_posts.ts'
+import {getAllCategories} from '../lib/wp_categories.ts'
+
+const posts = await getPostsInfo({ perPage: 10 })
+const categories = await getAllCategories()
+
+const getCategoryName = (postCategories) => {
+    return postCategories.map(catID => {
+        const category = categories.find(cat => cat.id === catID);
+        return category? category.name : "unknown";
+    })
+}
 
 ---
 <section class="services_section" id="services">
@@ -14,26 +30,21 @@ import Planet3 from '../assets/planet3.svg'
             <h1>Nuestros Servicios</h1>
         </div>
         <div class="services_description--container">
-            <div class="description1">
-                <span></span>
-                <h4>Actividades<br>deportivas</h4>
-            </div>
-            <div class="description2">
-                <span></span>
-                <h4>Actividades<br>artisticas</h4>
-            </div>
-            <div class="description3">
-                <span></span>
-                <h4>Clases de<br>idiomas</h4>
-            </div>
-            <div class="description4">
-                <span></span>
-                <h4>Asesoría psicológica<br>y Ocupacional</h4>
-            </div>
+            {
+                posts.map(post => {
+                    const categoryName = getCategoryName(post.categories)
+                    console.log(categoryName)
+                    const isActivities = categoryName.includes('Services');
+                    return (
+                    isActivities ? <ServicesCard {...post}/>
+                    : null
+                    )
+                })
+             }
         </div>
     </div>
     <div class="services_cta">
-        <a href="http://wa.me/573103468979" target="_blank">Más información</a>
+        <a href="http://wa.me/573103468979" target="_blank">MÁS INFORMACIÓN</a>
     </div>
 </section>
 <script>
