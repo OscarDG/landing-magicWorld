@@ -1,0 +1,17 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+import { getPostSlug } from '../../lib/wp.ts';
+
+const slug = Astro.params.slug
+if (!slug) return Astro.redirect("/404")
+
+const { title, content } = await getPostSlug(slug)
+---
+
+<Layout title={title}>
+    <article>
+        <h1 set:html={title}></h1>
+        <div set:html={content}></div>
+    </article>
+</Layout>

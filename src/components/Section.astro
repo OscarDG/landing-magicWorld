@@ -4,18 +4,16 @@ import Star from '../components/Star.astro'
 import StarTwo from './StarTwo.astro'
 import { Image } from 'astro:assets';
 import HeroImage from '/src/assets/kids-playing.webp'
+
 ---
 
 <section class="main_section" id="main_section">
     <div class="section_clouds">
-        <div class="cloud_1"></div>
-        <div class="cloud_2"></div>
-        <div class="cloud_3"></div>
-        <div class="cloud_4"></div>
+        <img src='/src/assets/clouds.svg' alt='Clouds'/>
     </div>
     <div class="section_content">
         <div class="section_content_image">
-            <Image src={HeroImage} width={600} height={550} alt="Kids"/>
+            <Image src={HeroImage} alt="Kids"/>
         </div>
         <div  class="section_content_stars--up">
             <Star />

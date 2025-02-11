@@ -1,5 +1,7 @@
 @import '_variables.sass'
 
+@media ( min-width: 1025px  )
+    
 .services_section
     position: relative
     display: flex
@@ -11,63 +13,71 @@
 
 .services_container
     position: absolute
-    top: -20px
+    top: 0px
     display: flex
     flex-flow: row wrap
     justify-content: center
     align-items: flex-start
     width: 95%
-    height: 95%
+    height: 100%
 
 .planet1
     position: absolute
-    top: 300px
-    left: 42%
+    top: 50%
+    left: 45%
+    width: 8%
+    height: 8%
 
 .planet2
     position: absolute
-    bottom: 150px
-    left: 65%
+    bottom: 27%
+    right: 15%
+    width: 12%
+    height: 12%
 
 .planet3
     position: absolute
-    top: 250px
+    top: 40%
     right: 25%
+    width: 8%
+    height: 8%
 
 .services_title
     position: absolute
-    top: 40px
-    width: 300px
+    top: 5%
+    width: 30%
     height: auto
     color: $dark_blue
+    font-size: 1.3vw
     text-align: center
 
 .services_description--container
     position: absolute
-    bottom: 50px
+    top: 15%
     display: flex
-    flex-flow: row nowrap
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
     width: 100%
-    height: 80%
+    height: 75%
 
 .description1
-    position: absolute
+    position: relative
+    top: -10%
     display: flex
     flex-flow: column nowrap
     justify-content: space-around
     align-items: center
-    top: 100px
-    left: 9%
-    width: 170px
-    height: 250px
+    width: 23%
+    height: 55%
 
 .description1
     span
         position: absolute
         top: 0
         display: block
-        width: 170px
-        height: 170px
+        width: 80%
+        height: 80%
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% 
         background-image: url('/src/assets/sports.webp')
         background-size: cover
@@ -77,30 +87,31 @@
 .description1
     h4
         position: absolute
-        bottom: 10px
+        bottom: -10%
         display: block
-        width: 100px
+        width: 80%
+        height: 13%
         color: $main_pink
+        font-size: 1.3vw
         text-align: center
 
 .description2
-    position: absolute
+    position: relative
+    top: 10%
     display: flex
     flex-flow: column nowrap
     justify-content: space-around
     align-items: center
-    top: 200px
-    left: 31%
-    width: 170px
-    height: 250px
+    width: 23%
+    height: 55%
 
 .description2
     span
         position: absolute
         top: 0
         display: block
-        width: 170px
-        height: 170px
+        width: 80%
+        height: 80%
         border-radius: 67% 33% 70% 30% / 30% 54% 46% 70%  
         background-image: url('/src/assets/arts.webp')
         background-size: cover
@@ -110,30 +121,31 @@
 .description2
     h4
         position: absolute
-        bottom: 10px
+        bottom: -10%
         display: block
-        width: 100px
+        width: 80%
+        height: 15%
         color: $main_pink
+        font-size: 1.3vw
         text-align: center
 
 .description3
-    position: absolute
+    position: relative
+    top: -10%
     display: flex
     flex-flow: column nowrap
     justify-content: space-around
     align-items: center
-    top: 100px
-    right: 32%
-    width: 170px
-    height: 250px
+    width: 23%
+    height: 55%
 
 .description3 
     span
         position: absolute
         top: 0
         display: block
-        width: 170px
-        height: 170px
+        width: 82%
+        height: 80%
         border-radius: 32% 68% 49% 51% / 35% 45% 55% 65%   
         background-image: url('/src/assets/languages.webp')
         background-size: cover
@@ -143,30 +155,31 @@
 .description3
     h4
         position: absolute
-        bottom: 10px
+        bottom: -10%
         display: block
-        width: 100px
+        width: 80%
+        height: 13%
         color: $main_pink
+        font-size: 1.3vw
         text-align: center
 
 .description4
-    position: absolute
+    position: relative
+    top: 10%
     display: flex
     flex-flow: column nowrap
     justify-content: space-around
     align-items: center
-    top: 200px
-    right: 9%
-    width: 170px
-    height: 250px
+    width: 23%
+    height: 55%
 
 .description4
     span
         position: absolute
         top: 0
         display: block
-        width: 170px
-        height: 170px
+        width: 80%
+        height: 80%
         border-radius: 68% 32% 62% 38% / 50% 61% 39% 50%   
         background-image: url('/src/assets/counseling.webp')
         background-size: cover
@@ -176,20 +189,23 @@
 .description4
     h4
         position: absolute
-        bottom: 10px
+        bottom: -10%
         display: block
-        width: 150px
+        width: 80%
+        height: 13%
         color: $main_pink
+        font-size: 1.3vw
         text-align: center
 
 .services_cta
     position: absolute
-    bottom: 40px
+    bottom: 5%
     display: flex
     flex-flow: column nowrap
     justify-content: center
     align-items: center
-    width: 500px
+    width: 30%
+    height: 10%
 
 .services_cta
     a
@@ -197,11 +213,12 @@
         flex-flow: column nowrap
         justify-content: center
         align-items: center
-        width: 200px
-        height: 50px
+        width: 60%
+        height: 80%
         border: 0
         border-radius: 100px
         color: $white
+        font-size: 1.4vw
         text-decoration: none
         background: $main_green
         transform: scale(1)

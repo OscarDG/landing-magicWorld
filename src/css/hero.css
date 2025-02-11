@@ -15,8 +15,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  bottom: 50px;
-  right: 10px;
+  bottom: 5%;
+  right: 5%;
   width: 70px;
   height: 70px;
   z-index: 3;
@@ -34,8 +34,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  bottom: 50px;
-  right: 10px;
+  bottom: 5%;
+  right: 2%;
   width: 70px;
   height: 70px;
   z-index: 3;
@@ -68,56 +68,67 @@
 
 .hero_image {
   position: absolute;
-  top: 50px;
-  right: 30px;
+  top: 8%;
+  right: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  height: 500px;
+  width: 40%;
+  height: 80%;
   z-index: 2;
 }
 
 .hero_image img {
-  width: 650px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
 .hero_text {
   position: absolute;
-  left: 200px;
-  top: 180px;
+  left: 5%;
+  top: 22%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 33%;
-  height: 300px;
-  color: #27445D;
+  align-items: center;
+  width: 50%;
+  height: 70%;
+}
+
+.hero_text h1 {
   font-family: "Rubik Moonrocks", serif;
-  font-size: 1.2em;
+  color: #27445D;
+  font-size: 3vw;
+  font-weight: regular;
+  width: 70%;
+  text-align: left;
 }
 
 .hero_text p {
   font-family: "Sour Gummy", serif;
-  font-size: 1em;
+  color: #27445D;
+  font-size: 2vw;
+  width: 70%;
+  text-align: left;
 }
 
 .hero-cta {
   position: absolute;
+  bottom: 10%;
+  left: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 100px;
-  left: 200px;
-  width: 200px;
-  height: 50px;
+  width: 25%;
+  height: 10%;
   border: none;
-  border-radius: 25px;
+  border-radius: 50px;
+  margin-top: 2%;
   background: #A6F1E0;
   font-family: "Sour Gummy", serif;
-  color: #FBFBFB;
-  font-size: 1.5em;
+  color: #27445D;
+  font-size: 1.8vw;
   text-decoration: none;
   cursor: pointer;
   transform: scale(1);

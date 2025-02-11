@@ -1,0 +1,111 @@
+.features {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #D4F6FF;
+}
+
+.features_content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  height: 80%;
+}
+
+.activities-card {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  height: 82%;
+  background: #FBFBFB;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: -0.3px -0.3px 5px #FBFBFB;
+  transform: scale(1);
+  transition: transform 0.2s ease-in;
+}
+
+.activities-card:hover {
+  transform: scale(1.02);
+}
+
+.activities-card--image {
+  width: 90%;
+  height: 51%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  border-radius: 15px 15px 0 0;
+}
+
+.activities-card--image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.activities-card--tittle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+  height: 10%;
+  margin-left: -10%;
+  margin-bottom: 2%;
+}
+
+.activities-card--tittle h3 {
+  width: 90%;
+  color: #27445D;
+  font-size: 1.3vw;
+}
+
+.activities-card--text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: -9%;
+  width: 82%;
+  font-size: 1.2vw;
+}
+
+.activities-more {
+  position: absolute;
+  bottom: 2%;
+  right: 10%;
+  width: 25%;
+}
+
+.activities-more a {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 10px;
+  margin-right: -200px;
+  background: #E574BC;
+  color: #FBFBFB;
+  text-decoration: none;
+}
+
+.activities-more a span {
+  position: absolute;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+}/*# sourceMappingURL=activities.css.map */

@@ -1,0 +1,28 @@
+---
+import '../css/activities.css'
+import Arrow from '../assets/rigthArrow.svg'
+
+interface Props {
+    title: string,
+    excerpt: string,
+    featuredImage: string,
+    date: string,
+    slug: string,
+    link: string
+}
+
+const {title, excerpt, date, slug, featuredImage, link} = Astro.props
+---
+<div class="activities-card">
+    <div class="activities-card--image">
+        <img src={featuredImage} alt="Kids playing" width={0} height={0}/>
+    </div>
+    <div class="activities-card--tittle">
+        <h3 set:html={title}></h3>
+    </div>
+    <div class="activities-card--text" set:html={excerpt}>
+    </div>
+    <div class="activities-more">
+        <a href={`/post/${slug}`}>Ver más<span><Arrow /></span></a>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+---
+import '../css/activities.css'
+import ActivitiesCard from '../components/Activities_card.astro'
+
+import {getPageInfo} from '../lib/wp.ts'
+import {getPostsInfo} from '../lib/wp_posts.ts'
+
+const {title, content} = await getPageInfo('activities')
+const posts = await getPostsInfo({ perPage: 3 })
+---
+
+<section class="features" id="features">
+    <h1 set:html={title}></h1>
+    <div class="features_content">
+        {
+        posts.map((post) => <ActivitiesCard {...post}/>)
+        }
+    </div>
+</section>
