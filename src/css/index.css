@@ -18,7 +18,9 @@
   margin-top: 2%;
   margin-left: 3%;
   width: 5%;
+  min-width: 70px;
   height: 100%;
+  min-height: 70px;
   cursor: pointer;
   transform: rotate(0);
   transition: transform 1s;
@@ -83,11 +85,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 158px;
-  height: 43px;
+  width: 16%;
+  height: 50%;
   margin-right: 2%;
   border: 1px solid #E574BC;
-  border-radius: 50px;
+  border-radius: 100px;
   background: transparent;
   font-size: 1.3vw;
   color: #E574BC;

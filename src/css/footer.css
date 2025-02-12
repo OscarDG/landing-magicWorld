@@ -1,16 +1,15 @@
 .main-footer {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-flow: colum nowrap;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 300px;
+  height: 40vh;
 }
 
 .footer-content {
   display: flex;
   flex-flow: row nowrap;
+  align-items: flex-start;
   width: 100%;
   height: 90%;
   background: #27445D;
@@ -18,25 +17,21 @@
 
 .footer-contact {
   position: absolute;
-  left: 150px;
+  top: 12%;
+  left: 10%;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  width: 300px;
-  height: 200px;
+  gap: 10px;
+  width: 30%;
+  height: 50%;
   color: #FBFBFB;
 }
 
 .footer-contact h2 {
-  margin-bottom: 30px;
   color: #D4F6FF;
-}
-
-.footer-contact p {
-  width: 190px;
-  height: 20px;
-  text-align: left;
+  font-size: 1.5vw;
 }
 
 .contact-phone,
@@ -46,40 +41,59 @@
   flex-flow: row;
   justify-content: space-around;
   align-items: center;
-  width: 250px;
-  height: 35px;
+  width: 70%;
+  height: 10%;
   margin-bottom: 10px;
+}
+
+.footer-contact p {
+  width: 80%;
+  height: 100%;
+  text-align: left;
+  font-size: 1.2vw;
 }
 
 .footer-social {
   position: absolute;
-  right: 150px;
+  right: 10%;
+  top: 12%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  width: 300px;
-  height: 200px;
+  width: 30%;
+  height: 50%;
   color: #FBFBFB;
 }
 
 .footer-social h2 {
   margin-bottom: 30px;
   color: #D4F6FF;
+  font-size: 1.5vw;
 }
 
 .social-container {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
-  align-items: center;
-  width: 260px;
-  height: 100px;
+  align-items: flex-start;
+  margin-bottom: 10%;
+  width: 80%;
+  height: 70%;
+}
+
+.social-instagram {
+  position: relative;
+  top: 5%;
+  padding: 0;
+  width: 20%;
+  height: 70%;
 }
 
 .social-instagram a {
-  width: 50px;
-  height: 50px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   transform: scale(1);
   transition: transform 0.5s ease-in;
 }
@@ -93,9 +107,16 @@
   transition: transform 0.5s;
 }
 
+.social-facebook {
+  position: relative;
+  padding: 0;
+  width: 22%;
+  height: 72%;
+}
+
 .social-facebook a {
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
   transform: scale(1);
   transition: transform 0.5s ease-in;
 }
@@ -114,8 +135,10 @@
   bottom: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 40px;
+  height: 10%;
+  min-height: 50px;
   color: #101820;
   background: #25282A;
 }

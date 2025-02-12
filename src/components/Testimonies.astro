@@ -22,35 +22,35 @@ const limitedReviews = reviews.slice(0, maxReviews)
                 <p class="pharagraph">{review.text}</p>
                 <div class="stars_container">
                     {review.rating == 5 ? (
-                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
+                        <span><Star fill="#FFB200"/></span>
+                        <span><Star fill="#FFB200"/></span>
+                        <span><Star fill="#FFB200"/></span>
+                        <span><Star fill="#FFB200"/></span>
+                        <span><Star fill="#FFB200"/></span>
                     ): review.rating == 4 ?(
-                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>  
+                        <span><Star fill="#FFB200"/></span>
+                        <span><Star fill="#FFB200"/></span>
+                        <span><Star fill="#FFB200"/></span>
+                        <span><Star fill="#FFB200"/></span>
+                        <span><Star fill="#000000"/></span>  
                     ): review.rating == 3 ? (
-                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>      
+                        <span><Star fill="#FFB200"/></span>
+                        <span><Star fill="#FFB200"/></span>
+                        <span><Star fill="#FFB200"/></span>
+                        <span><Star fill="#000000"/></span>
+                        <span><Star fill="#000000"/></span>      
                     ) : review.rating == 2 ? (
-                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#FFB200"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>  
+                        <span><Star fill="#FFB200"/></span>
+                        <span><Star fill="#FFB200"/></span>
+                        <span><Star fill="#000000"/></span>
+                        <span><Star fill="#000000"/></span>
+                        <span><Star fill="#000000"/></span>  
                     ) : review.rating == 1 ? (
-                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>
-                        <span><Star width={'30px'} height={'30px'} fill="#000000"/></span>
+                        <span><Star fill="#000000"/></span>
+                        <span><Star fill="#000000"/></span>
+                        <span><Star fill="#000000"/></span>
+                        <span><Star fill="#000000"/></span>
+                        <span><Star fill="#000000"/></span>
                     ) :
                     null  
                     }

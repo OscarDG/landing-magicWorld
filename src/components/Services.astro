@@ -23,13 +23,13 @@ const getCategoryName = (postCategories) => {
 ---
 <section class="services_section" id="services">
     <div class="services_container">
-        <Planet1  class= 'planet1' />
-        <Planet2 class='planet2' />
-        <Planet3 class='planet3' />
         <div class="services_title">
             <h1>Nuestros Servicios</h1>
         </div>
         <div class="services_description--container">
+            <Planet1  class='planet1' />
+            <Planet2 class='planet2' />
+            <Planet3 class='planet3' />
             {
                 posts.map(post => {
                     const categoryName = getCategoryName(post.categories)
@@ -50,9 +50,9 @@ const getCategoryName = (postCategories) => {
 <script>
     document.addEventListener("DOMContentLoaded", () => {
     import("motion").then(({ scroll, animate }) => {
-      scroll(animate(".planet1", { y: [-400, 0], x: [-400, 0] }, { duration: .5 }));
-      scroll(animate(".planet2", { y: [200, 0], x: [-300, 0] }, { duration: .5 }));
-      scroll(animate(".planet3", { y: [-300, 0], x: [300, 0] }, { duration: .5 }));
+      scroll(animate(".planet1", { y: [-500, 0], x: [-200, 0] }, { duration: .5 }));
+      scroll(animate(".planet2", { y: [200, 0], x: [-200, 0] }, { duration: .5 }));
+      scroll(animate(".planet3", { y: [-300, 0], x: [150, 0] }, { duration: .5 }));
     });
   });
 </script>

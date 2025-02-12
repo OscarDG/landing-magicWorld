@@ -1,17 +1,18 @@
 .team-section {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  height: 100vh;
+  padding-top: 8%;
+  padding-bottom: 20%;
 }
 
 .team-section h1 {
   color: #27445D;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
   text-align: center;
 }
 
@@ -21,54 +22,56 @@
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
-  gap: 50px 120px;
-  width: 70%;
+  gap: 10% 15%;
+  width: 80%;
   height: 95%;
-  margin-top: 80px;
+  margin-top: 8%;
 }
 
-.proffesional {
+.professional {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  width: 280px;
-  height: 330px;
+  width: 30%;
+  height: 60%;
 }
 
 .prof-image--container {
   position: relative;
-  width: 180px;
-  height: 180px;
+  width: 70%;
+  min-width: 200px;
+  height: 55%;
+  min-height: 200px;
   border: 0;
-  border-radius: 320px;
+  border-radius: 50%;
   overflow: hidden;
 }
 
 .prof-image--container #teacher1 {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: 45% 15%;
 }
 
 .prof-image--container #teacher2 {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: 35% 20%;
 }
 
 .prof-image--container #teacher3 {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: 20% 10%;
 }
 
 .prof-image--container #teacher4 {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: left top;
 }
@@ -79,19 +82,20 @@
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  width: 250px;
-  height: 150px;
+  width: 80%;
+  height: 50%;
 }
 
 .prof-desc--container h4 {
   position: absolute;
-  top: -15px;
+  top: -5%;
   color: #E574BC;
+  font-size: 1.5vw;
 }
 
 .prof-desc--container p {
   position: absolute;
-  top: 25px;
+  top: 30%;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 1vw;
 }/*# sourceMappingURL=team.css.map */

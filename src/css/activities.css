@@ -15,7 +15,7 @@
   width: 30%;
   height: auto;
   color: #27445D;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
   text-align: center;
 }
 
@@ -25,8 +25,10 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 10%;
   width: 90%;
   height: 80%;
+  margin-bottom: 2%;
 }
 
 .activities-card {
@@ -36,7 +38,8 @@
   justify-content: flex-start;
   align-items: center;
   width: 30%;
-  height: 82%;
+  height: 90%;
+  max-height: 1000px;
   background: #FBFBFB;
   border: 0;
   border-radius: 20px;
@@ -95,6 +98,8 @@
   bottom: 2%;
   right: 10%;
   width: 25%;
+  height: 6%;
+  margin-bottom: 5%;
 }
 
 .activities-more a {
@@ -102,20 +107,24 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
-  height: auto;
-  padding: 5px 10px;
+  width: 92%;
+  min-width: 70px;
+  height: 92%;
+  min-height: 25px;
+  padding: 5px 12px;
   border: 0;
   border-radius: 10px;
-  margin-right: -200px;
   background: #E574BC;
   color: #FBFBFB;
+  font-size: 1vw;
   text-decoration: none;
 }
 
 .activities-more a span {
-  position: absolute;
-  right: 5px;
-  width: 20px;
-  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 25%;
+  margin-left: 15%;
 }/*# sourceMappingURL=activities.css.map */
