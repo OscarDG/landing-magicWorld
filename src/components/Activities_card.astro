@@ -6,25 +6,30 @@ import { Image } from 'astro:assets'
 interface Props {
     title: string,
     excerpt: string,
+    content: string,
     featuredImage: string,
     date: string,
     slug: string,
     link: string
 }
 
-const {title, excerpt, date, slug, featuredImage, link} = Astro.props
+const {title, excerpt, content, date, slug, featuredImage, link} = Astro.props
 
 ---
 <div class="activities-card">
-    <div class="activities-card--image">
-        <Image src={featuredImage} alt="Kids playing" width={100} height={100}/>
+    <div class="activities-card-info" set:html={content}>
     </div>
-    <div class="activities-card--tittle">
-        <h3 set:html={title}></h3>
-    </div>
-    <div class="activities-card--text" set:html={excerpt}>
-    </div>
-    <div class="activities-more">
-        <a href={`/post/${slug}`}>Ver más<span><Arrow /></span></a>
+    <div class="activities-card-content">
+        <div class="activities-card--image">
+            <Image src={featuredImage} alt="Kids playing" width={100} height={100}/>
+        </div>
+        <div class="activities-card--tittle">
+            <h3 set:html={title}></h3>
+        </div>
+        <div class="activities-card--text" set:html={excerpt}>
+        </div>
+        <div class="activities-more">
+            <button class="card-btn">Ver más</button>
+        </div>
     </div>
 </div>

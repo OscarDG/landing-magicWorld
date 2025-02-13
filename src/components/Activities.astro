@@ -35,3 +35,17 @@ const getCategoryName = (postCategories) => {
         }
     </div>
 </section>
+<script>
+    document.querySelectorAll(".card-btn").forEach(button => {
+    button.addEventListener("click", function() {
+
+        const card = this.closest(".activities-card");
+        const infoCard = card.querySelector(".activities-card-info");
+        if (infoCard) {
+            infoCard.classList.toggle("active");
+        }
+
+        this.textContent = infoCard.classList.contains("active") ? "Cerrar" : 'Ver más';
+    });
+});
+</script>
