@@ -9,6 +9,7 @@ export default defineConfig(
             svg: true,
         },
 
+        output: 'static',
         site: 'https://OscarDG.github.io',
         base: '/landing-magicWorld',
     },
