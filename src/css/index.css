@@ -1,8 +1,8 @@
 @media (min-width: 350px) and (max-width: 1024px) {
   .main_header {
-    position: absolute;
-    right: 0;
+    position: relative;
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding: 0;
     width: 100%;
@@ -12,14 +12,13 @@
   }
   .header_logo {
     position: absolute;
+    left: 40%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 2%;
-    margin-left: 42%;
     width: 10%;
-    min-width: 120px;
+    min-width: 90px;
     height: 100%;
     min-height: 120px;
     cursor: pointer;
@@ -30,13 +29,13 @@
   }
   .header_nav {
     position: absolute;
-    left: 1%;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 1%;
-    width: 60%;
+    width: 30%;
     height: 90%;
   }
   .header_menu_mobile {
@@ -83,31 +82,31 @@
     background: #E574BC;
   }
   .header_menu_mobile span:nth-child(3).open {
-    transform: translate(0, -32px) rotate(-45deg);
+    transform: translate(0, -6px) rotate(-45deg);
     background: #E574BC;
   }
   .nav_list {
     position: absolute;
     display: none;
     top: 1%;
-    left: 1%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 140%;
+    left: 5%;
+    width: 250%;
     height: 500%;
-    margin-right: 10%;
-    border-radius: 10px;
+    border-radius: 20px;
     background: #FBFBFB;
   }
   .nav_list.open {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
   .nav_list li {
     list-style: none;
     color: #27445D;
     font-size: 5vw;
     font-weight: bold;
+    text-align: center;
     cursor: pointer;
     width: auto;
     font-family: "Sour Gummy", serif;
@@ -135,7 +134,7 @@
     justify-content: center;
     align-items: center;
     width: 20%;
-    height: 40%;
+    height: 30%;
     border: 1px solid #E574BC;
     border-radius: 100px;
     background: transparent;
@@ -153,12 +152,13 @@
 }
 @media (min-width: 1023px) {
   .main_header {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: center;
     padding: 0;
     width: 100%;
-    height: 15%;
+    height: 20%;
+    background: #FBFBFB;
     z-index: 3;
   }
   .header_logo {
@@ -167,7 +167,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: 3%;
+    margin-left: 5%;
     width: 5%;
     min-width: 70px;
     height: 100%;
@@ -182,11 +182,12 @@
   }
   .header_nav {
     position: absolute;
-    right: 12%;
+    right: 5%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    width: 60%;
+    width: 70%;
     height: 90%;
   }
   .header_menu_mobile {
@@ -196,15 +197,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 70%;
     height: 90%;
-    margin-right: 5%;
   }
   .nav_list li {
     list-style: none;
     color: #27445D;
-    font-size: 1.35vw;
+    font-size: 1.6vw;
     font-weight: bold;
     cursor: pointer;
     width: auto;
@@ -232,8 +232,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10%;
-    height: 50%;
+    width: 9%;
+    height: 30%;
     margin-right: 2%;
     border: 1px solid #E574BC;
     border-radius: 100px;

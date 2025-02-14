@@ -1,6 +1,6 @@
 ---
 import '../css/activities.css'
-import Arrow from '../assets/rigthArrow.svg'
+import register from '../assets/Register.gif'
 import { Image } from 'astro:assets'
 
 interface Props {
@@ -29,6 +29,7 @@ const {title, excerpt, content, date, slug, featuredImage, link} = Astro.props
         <div class="activities-card--text" set:html={excerpt}>
         </div>
         <div class="activities-more">
+            <a href="/" target="_blank"><Image src={register} alt="registro" class="card-register" />Registrate</a>
             <button class="card-btn">Ver más</button>
         </div>
     </div>

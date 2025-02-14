@@ -1,5 +1,5 @@
 .main-footer {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-flow: colum nowrap;
   width: 100%;
