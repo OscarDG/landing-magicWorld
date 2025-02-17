@@ -30,9 +30,24 @@ import HeroImage from '/src/assets/kids-playing.webp'
     </div>
 </section>
 <script>
-document.addEventListener("DOMContentLoaded", () => {
+//Identify if the viewport matches with a given criteria and trigger the animation
+
+function handleViewPortChange(event) {
+    if(event.matches){
     import("motion").then(({ scroll, animate }) => {
-      scroll(animate(".section_content_text", { x: [0.5, -100]}, { duration: .1 }));
+      scroll(animate(".section_content_text", { y: [0, -300]}, { duration: 1 }));
     });
-  });
+    }else{
+        import("motion").then(({ scroll, animate }) => {
+        scroll(animate(".section_content_text", { x: [0.5, -100]}, { duration: .1 }));
+    })
+  }
+}
+
+const mediaQuery = window.matchMedia("(min-width: 350px) and (max-width: 1024px )")
+
+mediaQuery.addEventListener("change", handleViewPortChange);
+
+handleViewPortChange(mediaQuery);
+
 </script>
