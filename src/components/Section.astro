@@ -35,7 +35,7 @@ import HeroImage from '/src/assets/kids-playing.webp'
 function handleViewPortChange(event) {
     if(event.matches){
     import("motion").then(({ scroll, animate }) => {
-      scroll(animate(".section_content_text", { y: [0, -300]}, { duration: 1 }));
+      scroll(animate(".section_content_text", { y: [0, -100]}, { duration: 1 }));
     });
     }else{
         import("motion").then(({ scroll, animate }) => {

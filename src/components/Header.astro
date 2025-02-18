@@ -14,6 +14,7 @@ import Logo from '../assets/logo.webp'
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
+        <span class="line"></span>
     </div>
     <nav class="header_nav">
         <ul class="nav_list">
@@ -26,14 +27,14 @@ import Logo from '../assets/logo.webp'
 </header>
 <script>
     const navBtn = document.querySelector('.header_menu_mobile');
-    
+
     navBtn.addEventListener('click', function(){
         document.querySelectorAll('.line').forEach(line => {
             line.classList.toggle('open');
         });
-    const navList = document.querySelector('.nav_list')
-        if(navList){
-            navList.classList.toggle('open')
-        }
-    })
+        const navList = document.querySelector('.header_nav')
+            if(navList){
+                navList.classList.toggle('open')
+            };
+    });
 </script>

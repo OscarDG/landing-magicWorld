@@ -1,3 +1,13 @@
+@keyframes show {
+  from {
+    scale: 20%;
+    opacity: 0;
+  }
+  to {
+    scale: 100%;
+    opacity: 1;
+  }
+}
 .team-section {
   position: relative;
   display: flex;
@@ -35,6 +45,12 @@
   align-items: center;
   width: 30%;
   height: 60%;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
 }
 
 .prof-image--container {

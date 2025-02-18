@@ -48,12 +48,12 @@
     .hero_text
         position: absolute
         left: 12%
-        top: 42%
+        top: 40%
         display: flex
         flex-direction: column
         justify-content: flex-start
         align-items: center
-        width: 75%
+        width: 80%
         height: 40%
         z-index: 2
     
@@ -61,7 +61,7 @@
         h1
             font-family: $fun_font
             color: $dark_blue
-            font-size: 6vw
+            font-size: 2rem
             font-weight: regular
             width: 80%
             text-align: center
@@ -70,7 +70,7 @@
         p
             font-family: $main_font
             color: $dark_blue
-            font-size: 5vw
+            font-size: clamp(1rem, 0.8rem + 1.5vw, 2rem )
             width: 90%
             text-align: center
 
@@ -85,7 +85,6 @@
         height: 8%
         border: none
         border-radius: 40px
-        margin-top: 2%
         background: $main_green
         font-family: $main_font
         color: $dark_blue
