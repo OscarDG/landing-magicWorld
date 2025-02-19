@@ -48,11 +48,31 @@ const getCategoryName = (postCategories) => {
     </div>
 </section>
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    import("motion").then(({ scroll, animate }) => {
-      scroll(animate(".planet1", { y: [-500, 0], x: [-200, 0] }, { duration: .5 }));
-      scroll(animate(".planet2", { y: [200, 0], x: [-200, 0] }, { duration: .5 }));
-      scroll(animate(".planet3", { y: [-300, 0], x: [150, 0] }, { duration: .5 }));
-    });
-  });
+
+    function handleViewPortChange(event){
+        if(event.matches){
+            document.addEventListener("DOMContentLoaded", () => {
+                import("motion").then(({ scroll, animate }) => {
+                scroll(animate(".planet1", { y: [-300, 0], x: [-300, 0] }, { duration: .2 }));
+                scroll(animate(".planet2", { x: [100, 0] }, { duration: .5 }));
+                scroll(animate(".planet3", { y: [-300, 0], x: [150, 0] }, { duration: .5 }));
+                });
+            });
+        }else{
+            document.addEventListener("DOMContentLoaded", () => {
+                import("motion").then(({ scroll, animate }) => {
+                scroll(animate(".planet1", { y: [-300, 0], x: [-300, 0] }, { duration: .2 }));
+                scroll(animate(".planet2", { y: [200, 0], x: [-200, 0] }, { duration: .5 }));
+                scroll(animate(".planet3", { y: [-300, 0], x: [150, 0] }, { duration: .5 }));
+                });
+            });
+        };
+    };
+
+    const mediaQuery = window.matchMedia("(min-width: 350px) and (max-width: 1024px )")
+
+    mediaQuery.addEventListener("change", handleViewPortChange);
+
+    handleViewPortChange(mediaQuery);
+
 </script>
